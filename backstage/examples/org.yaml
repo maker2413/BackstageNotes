@@ -15,3 +15,22 @@ metadata:
 spec:
   type: team
   children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: maker2413
+spec:
+  memberOf: [development]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: development
+  description: Development Team
+spec:
+  type: team
+  profile:
+    email: dev@test.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  children: []
